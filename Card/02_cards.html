@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* background-image: url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+
+            background-color: #00DBDE;
+            background-image: linear-gradient(252deg, #00DBDE 0%, #FC00FF 100%);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+            
+        }
+
+        .card{
+            width: 250px;
+            height: 350px;
+            border: 3px rgb(119, 24, 24) solid;
+            border-radius: 30px;
+            background-color: white;
+            /* filter: blur(2px); */
+            box-shadow: gray;
+
+            border-top: #be18a5 5px solid;
+            border-left: #4583b7 3px solid;
+
+            /* filter: blur((10px 8px rgb(15, 134, 73)) 60px rgb(41, 102, 41) ); */
+                 box-shadow: 10px 10px 60px rgb(119, 120, 118),-10px -10px 60px rgb(120, 121, 119);
+            
+                 display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: space-between; */
+            gap: 15px;
+
+            overflow: hidden;
+        }
+
+        .card img{
+            width: 250px;
+            height: 120px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            
+        }
+
+        #item2{
+            width: 200px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: space-between; */
+            gap: 7px;
+              h2{
+                font-size: medium;
+              }
+              p{
+                font-size: small;
+                text-align: center;
+              }
+
+              overflow: hidden;
+            
+        }
+        #item3{
+            width: 200px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            /* column-gap: 30px; */
+            /* row-gap: 20px; */
+            background-color: rgb(169, 182, 231);
+          
+            #innerItem1{
+                    /* padding-left: 30px; */
+                    width: 40%;
+                    height: 80%;
+                    /* background-color: #FC00FF; */
+
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                     
+                    #icon{
+                           width: 20px;
+                           height: 20px;
+                           object-fit: cover;
+
+                           img{
+                            
+                            width: 20px;
+                           height: 20px;
+                           border-radius: 0px;
+                           }
+                      }
+
+                      p{
+                        width: 94%;
+                        height: 100%;
+                        display: flex;
+                        font-size: small;
+                        flex-wrap: wrap;
+                        overflow: hidden;
+                      }  
+                  }
+                  
+                  #innerItem2{
+                    width: 30%;
+                    height: 80%;
+                    /* background-color: #1c9168; */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a{
+                        text-decoration: none;
+                        color: blue;
+                    }
+                    
+                    
+                  }
+        }
+
+        #button{
+            width: 200px;
+            height: 35px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            /* column-gap: 30px; */
+            /* row-gap: 20px; */
+            
+            
+            button{
+                width: 100%;
+                height: 100%;
+                     
+             background-color: rgb(5, 19, 70);
+            border-radius: 14px;
+
+            color: #ffffff;
+
+            box-shadow:  10px 10px 60px rgb(5, 19, 70) ,-1px -1px 20px rgb(5, 19, 70);
+
+            /* for shadows try websites copy paste(material shadow in css) */
+
+            }
+        }
+
+        #cancel{
+            margin-bottom: 8px;
+            text-decoration: overline;
+        }
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+           <div class="card">
+               <img src="akhand.jpeg" alt="akhand">
+               
+           
+
+           <div id="item2">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quibusdam nemo nesciunt, similique pariatur corporis.</p>
+        </div>
+
+            <div id="item3">
+                <div id="innerItem1">
+                    <div id="icon">
+                         <img src="akhand.jpeg" alt="akhand">
+                    </div>
+                    <p> Lorem <strong>99 off</strong>.</p>
+                </div>
+                <div id="innerItem2">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <div id="button">
+                <button>Proceed To Payment</button>
+            </div>
+            <a href="#" id="cancel">Cancel Order</a>
+           </div>
+    </div>
+</body>
+</html>
